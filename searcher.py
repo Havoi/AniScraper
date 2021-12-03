@@ -18,10 +18,11 @@ def searcher():
 	data = soup.find_all(class_ = "name")
 	for tags in data:
 		recomd.append(tags.get_text())
+	print(f"{len(recomd)} anime available")
 	no_of_recd = int(input("Enter No. of recommendations: "))
 	for x in range(no_of_recd):
 		if x<=len(recomd)-1:
-			print(recomd[x])
+			print(f"{x+1}) {recomd[x]}")
 		if x>len(recomd)-1:
 			print(f"Only {len(recomd)} anime available")
 			break

@@ -22,9 +22,4 @@ Tutorial--->
 --> Fill the required Parameters    
 --> Anime.html with automatically open up and stream the anime.   
 
-Bugs --->  
 
---> Only fill the valid value otherwise you will get a big error and you hae to restart whole program.   
---> There is still very few anime as it only scrapes 1/74 pages  
---> This is in alpha stage so bugs and gliches are expected.    
-   

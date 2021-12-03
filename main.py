@@ -46,5 +46,4 @@ html_template = """
 # writing the code into the file
 f.write(html_template)
 webbrowser.open('Anime.html')
-# close the file
-f.close()
+

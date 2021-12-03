@@ -42,10 +42,9 @@ html_template = """
 </body>
 </html>
 """.format(get_gogo(url))
-print(get_gogo(url))
+
 # writing the code into the file
 f.write(html_template)
 webbrowser.open('Anime.html')
 # close the file
 f.close()
-input()

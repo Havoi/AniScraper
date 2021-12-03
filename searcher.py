@@ -5,19 +5,21 @@ import re
 
 def searcher():
 	search = input("Enter Anime Name: ")
-
+	pageno = 5
 	# Website URL
-	URL = f'https://gogoanime.wiki//search.html?keyword={search}&page=1'
+	recomd = [] 
+	for x in range(1,pageno):
+		URL = f'https://gogoanime.wiki//search.html?keyword={search}&page={x}'
+		# Page content from Website URL
+		page = requests.get( URL )
+		 
+		# parse html content
+		soup = BeautifulSoup( page.content , 'html.parser')
+		data = soup.find_all(class_ = "name")
+		for tags in data:
+			recomd.append(tags.get_text())
 
-
-	# Page content from Website URL
-	page = requests.get( URL )
-	recomd = []  
-	# parse html content
-	soup = BeautifulSoup( page.content , 'html.parser')
-	data = soup.find_all(class_ = "name")
-	for tags in data:
-		recomd.append(tags.get_text())
+			
 	print(f"{len(recomd)} anime available")
 	no_of_recd = int(input("Enter No. of recommendations: "))
 	for x in range(no_of_recd):
@@ -42,7 +44,7 @@ def formator():
 	    else:
 	        newstr = newstr + new_text[i]
 
-	episode = input('Enter Valid episode No.: ')
+	episode = input('Enter Valid episode No (1 for movies) :')
 	anime_link= newstr+"-episode-"+episode
 	return anime_link
 

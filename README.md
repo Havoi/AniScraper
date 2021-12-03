@@ -23,3 +23,4 @@ Tutorial--->
 --> Anime.html with automatically open up and stream the anime.   
 
 
+https://youtu.be/TKaZG6p-YbA

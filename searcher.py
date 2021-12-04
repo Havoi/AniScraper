@@ -32,6 +32,36 @@ def searcher():
 	main = recomd[anime-1]
 	return main 
 
+
+def hypen(anime_code): 
+
+    code=[]
+    temp = None 
+    for x in anime_code:
+        code.append(x)
+    # for x in code:
+   
+    #   if temp == x and x == "-":
+    #       code[x].remove()
+    #   temp = x
+    length = len(code)
+    
+    # Iterating the index
+    # same as 'for i in range(len(list))'
+    for i in range(0,length):
+        
+        try:
+            x = code[i]
+        except:
+            pass 
+        if temp == x and x == "-":
+            print(i)
+            code.pop(i)
+        temp = x
+
+    
+    return "".join(code)
+
 def formator():
 	name= searcher()
 
@@ -46,5 +76,5 @@ def formator():
 
 	episode = input('Enter Valid episode No (1 for movies) :')
 	anime_link= newstr+"-episode-"+episode
-	return anime_link
-
+	new_link = hypen(anime_link)
+	return new_link

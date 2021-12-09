@@ -21,7 +21,7 @@ Tutorial--->
 --> After all the packages are installed open the python file `python main.py`     
 --> Fill the required Parameters    
 --> Anime.html with automatically open up and stream the anime.   
---> If it doesn't open automatically `"Anime.html`   
+--> If it doesn't open automatically `Anime.html`   
 
 
 https://youtu.be/TKaZG6p-YbA

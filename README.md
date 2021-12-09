@@ -17,10 +17,11 @@ Tutorial--->
 --> Install python 3.9.9 from microsoft store    
 --> Shift + Right click in the source folder    
 --> Select open powershell window here   
---> write "pip install -r requirements.txt"   
---> After all the packages are installed open the python file main.py with "python main.py"   
+--> write `pip install -r requirements.txt`     
+--> After all the packages are installed open the python file `python main.py`     
 --> Fill the required Parameters    
 --> Anime.html with automatically open up and stream the anime.   
+--> If it doesn't open automatically `"Anime.html`   
 
 
 https://youtu.be/TKaZG6p-YbA

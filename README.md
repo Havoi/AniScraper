@@ -1,6 +1,6 @@
 # AniScraper
 A very fast anime stream link scraper with python. This is all hardcoded as I couldn't get any lead on this topic. 
-THIS IS IN APLHA STAGE
+# production closed but still work   
 
 Features--->  
 --> Very fast  
